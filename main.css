@@ -105,6 +105,17 @@
     margin-top:0;
 }
 
+.donation_value_2{
+    margin-right: 20px;
+    padding-top: 10px;
+    height: auto;
+    font-size: 157px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight:bold;
+    color: #9E3251;
+    margin-top:0;
+}
+
 .donation_p1{
     width: 255px;
     text-align: left;
@@ -147,7 +158,6 @@
     
     }
     .donation_h{
-        margin-left: 100px;
         display: flex;
         justify-content: center;
         text-align: left;
@@ -177,6 +187,7 @@
         margin-left: 0;
         margin-right: 0;
       }
+
     .hero{
         width: 365px;
         height: 100%;
@@ -198,16 +209,78 @@
         width: 340px;
         margin-top: 75px;
         margin-left: 10px;
-        font-size: 18px;
-       
+        font-size: 18px;   
     }
 
+    .donation_h{
+        margin-top: 50px;
+        text-align: center;
+        font-weight: bold;
+        font-size:27px;
+        letter-spacing: 3.92px;
+
+    }
     .donate_button{
-        width: 198px;
-        height: 64px;
+       width: 198px;
+        height: 45px;   
         margin-left: 20%;
         margin-top: 25px;
         margin-bottom: 40px;
         font-size: 16px;
+    }
+
+    .donation_text_box{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        margin-right: 50px;
+    
+    }
+    .donation_box{
+        flex-direction: column;
+        
+    }
+
+    .donation_text{
+        display: flex;
+        flex-direction: column;
+        margin-right: 100px;
+       
+    }
+    .donation_value{
+        margin-left: 25%;
+        margin-right: 25px;
+        margin-bottom:10px;
+        padding-top: 10px;
+        height: auto;
+        font-size: 108px;
+        margin-top:0;
+    }
+
+    .donation_value_2{
+        margin-left: 32%;
+        margin-right: 25px;
+        margin-bottom:10px;
+        padding-top: 10px;
+        height: auto;
+        font-size: 108px;
+        margin-top:0;
+    }
+    
+    .donation_p1{
+        text-align: center;
+        width: 320px;
+        margin-top: 0;
+        margin-left:19%;
+        font-size:27px;
+    }
+    
+    .donation_p2{
+        width: 350px;
+        margin-top: 5px;
+        margin-left: 10%;
+        text-align: center;
+        font-size: 16px;
+    
     }
 }
