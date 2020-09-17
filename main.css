@@ -6,6 +6,8 @@
 #landing_container{
     width: 1920px;
     height: auto;
+    margin-top:25px;
+    margin-bottom:25px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -61,6 +63,67 @@
     letter-spacing: 0px;
     color: #FFFFFF;
 }
+.donation_h{
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    letter-spacing: 5.8px;
+    color:#A32B4B;
+
+}
+
+.donation_box{
+    display: flex;
+    justify-content: center;
+    
+}
+.donation_text_box{
+    display: flex;
+    flex-direction: row;
+    height: 300px;
+    margin-right: 50px;
+
+}
+
+.donation_text{
+    display: flex;
+    flex-direction: column;
+    margin-right: 100px;
+   
+}
+.donation_value{
+    margin-right: 20px;
+    padding-top: 10px;
+    height: auto;
+    font-size: 157px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight:bold;
+    color: #9E3251;
+    margin-top:0;
+}
+
+.donation_p1{
+    width: 255px;
+    text-align: left;
+    font-size: 40px;
+    margin-bottom:0;
+    letter-spacing: 7px;
+    color: #9E3251;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.donation_p2{
+    margin-top: 5px;
+    text-align: left;
+    font-size: 21px;
+    font-weight: 500;
+    color: #9E3251;
+    font-family: 'Montserrat', sans-serif;
+}
 
 @media only screen and (max-width: 1440px) {
 
@@ -83,17 +146,37 @@
         position: relative;
     
     }
+    .donation_h{
+        margin-left: 100px;
+        display: flex;
+        justify-content: center;
+        text-align: left;
+        font-weight: bold;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 40px;
+        letter-spacing: 5.8px;
+        color:#A32B4B;
+    
+    }
+
+    .donation_text_box{
+        display: flex;
+        flex-direction: row;
+        height: 300px;
+        margin-right: 25px;
+    }
 
 }
 
 
 @media only screen and (max-width: 500px) {
     
-    .landing_container{
+    #landing_container{
+        width: auto;
+        height:auto;
         margin-left: 0;
         margin-right: 0;
       }
-    
     .hero{
         width: 365px;
         height: 100%;
