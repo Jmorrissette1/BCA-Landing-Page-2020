@@ -7,7 +7,7 @@
      margin-bottom: 0;
  }
 #landing_container{
-    width: 1450px;
+    width: 100%;
     height: auto;
     margin-top:25px;
     margin-bottom:25px;
@@ -21,7 +21,7 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
-    background-image: url(Hero-background-1440.png);
+    background-image: url(Hero-background.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -144,10 +144,10 @@
 
 .fh_container{
     margin-bottom: 0;
-    width: 1440px;
-    height: 800px;
+    width: 100%;
+    height: 1600px;
     background-color: #ECECEC;
-    padding-top: 55px;
+    padding-top: 25px;
     padding-bottom:0;
     margin-right:0;
     
@@ -178,18 +178,34 @@
     margin-left: auto;
     margin-right: auto;
     margin-top: 15px;
+    margin-bottom: 20px;
 }
 
+.img_box{
+    margin-bottom: 0%;
+}
 .dealer_car_img{
     margin-top: 0;
     margin-left: 0;
     margin-right: 0;
     width: 100%;
-    height: 600px;
-    object-fit: cover;
+    height: cover;
     
    
 }
+.inventory_button_box{
+    margin-top: 0;
+    padding-top: 0;
+    width: 100%;
+    height: 200px;
+    background-color: #F27590;
+}
+
+.inv_h1{
+    padding-top:0;
+    margin-top:0;
+}
+
 
 @media only screen and (max-width: 1440px) {
 
@@ -242,7 +258,7 @@
     .fh_container{
         margin-bottom: 0;
         width: 1440px;
-        height: 800px;
+        height: 1275px;
         background-color: #ECECEC;
         padding-top: 55px;
         
@@ -253,12 +269,17 @@
         margin-left: 0;
         margin-right: 0;
         width: 1440px;
-        height: 594px;
+        height: 600px;
        
     }
+    
+    .inventory_button_box{
+        padding-top: 0;
+        width: 1440px;
+        height: 389px;
+        background-color: #F27590;
+    }
 }
-
-
 @media only screen and (max-width: 500px) {
     
     #landing_container{
