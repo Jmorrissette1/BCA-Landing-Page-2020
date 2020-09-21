@@ -1,20 +1,29 @@
- a{
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+a{
      text-decoration: none;
      color: #FFFFFF;
  }
 
- body{
-     margin-bottom: 0;
- }
-#landing_container{
+#landing-container {
     width: 100%;
-    height: auto;
-    margin-top:25px;
-    margin-bottom:25px;
-    margin-left: auto;
-    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
 }
 
+/* HERO SECTION */
 .hero{
     width: 100%;
     height: 1220px;
@@ -28,19 +37,19 @@
     position: relative;
 
 }
-.hero_logo_m{
+
+.hero-logo-m{
     display: none;
 }
 
-.hero_logo{
+.hero-logo{
     width: 700px;
     height: 400px;
     margin-top: 125px;
     margin-left: 200px;
-
 }
 
-.hero_p{
+.hero-p{
     width: 700px;
     line-height: 200%;
     font-family: 'Montserrat', sans-serif;
@@ -52,7 +61,7 @@
     color: #FFFFFF; 
 }
 
-.donate_button{
+.donate-button{
     width: 211px;
     height: 45px;
     margin-left: 200px;
@@ -69,7 +78,29 @@
     letter-spacing: 0px;
     color: #FFFFFF;
 }
-.donation_h{
+
+/* COMMON */
+
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+/* DONATIONS */
+.donation-h{
     display: flex;
     justify-content: center;
     text-align: left;
@@ -78,29 +109,33 @@
     font-size: 40px;
     letter-spacing: 5.8px;
     color:#A32B4B;
-
 }
 
-.donation_box{
+.donation-row {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.donation-box{
     display: flex;
     justify-content: center;
     
 }
-.donation_text_box{
+.donation-text-box{
     display: flex;
     flex-direction: row;
     height: 300px;
-    margin-right: 50px;
-
+    margin: 0 25px;
 }
 
-.donation_text{
+.donation-text{
     display: flex;
     flex-direction: column;
     margin-right: 100px;
    
 }
-.donation_value{
+.donation-value{
     margin-right: 20px;
     padding-top: 10px;
     height: auto;
@@ -111,7 +146,7 @@
     margin-top:0;
 }
 
-.donation_value_2{
+.donation-value-2{
     margin-right: 20px;
     padding-top: 10px;
     height: auto;
@@ -122,7 +157,7 @@
     margin-top:0;
 }
 
-.donation_p1{
+.donation-p1{
     width: 255px;
     text-align: left;
     font-size: 40px;
@@ -133,7 +168,7 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-.donation_p2{
+.donation-p2{
     margin-top: 5px;
     text-align: left;
     font-size: 21px;
@@ -142,36 +177,27 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-.fh_container{
-    margin-bottom: 0;
-    width: 100%;
-    height: 1600px;
+/*  FRED HUTCH */
+
+.fh-section {
+    padding: 20px 30px;
     background-color: #ECECEC;
-    padding-top: 25px;
-    padding-bottom:0;
-    margin-right:0;
-    
 }
 
-.fh_p{
-    width: 1195px;
-    height: 236px;
-    padding-top: 75px;
-    margin-left: auto;
-    margin-right: auto; 
-    margin-bottom: 0;
-    padding-top: 10px;
+.fh-p{
+    width: 100%;
+    max-width: 1195px;
     text-align: center;
     font-weight: bold;
     font-size: 40px;
-    letter-spacing: 5.8px;  
+    letter-spacing: 5.8px;
     text-transform: uppercase;
     color: #081A4A;
     font-family: 'Montserrat', sans-serif;
-
+    margin: 0;
 }
 
-.fh_logo{
+.fh-logo{
     width: 526px;
     height: 443px;
     display: block;
@@ -181,19 +207,20 @@
     margin-bottom: 20px;
 }
 
-.img_box{
+.img-box{
     margin-bottom: 0%;
 }
-.dealer_car_img{
-    margin-top: 0;
-    margin-left: 0;
-    margin-right: 0;
-    width: 100%;
-    height: cover;
-    
-   
+
+/* Dealership */
+
+.dealership-container {
+    background-color: #F27590;
 }
-.inventory_button_box{
+.dealer-car-img{
+    width: 100%;
+    height: auto;
+}
+.inventory-button-box{
     margin-top: 0;
     padding-top: 0;
     width: 100%;
@@ -201,206 +228,199 @@
     background-color: #F27590;
 }
 
-.inv_h1{
+.inv-h1{
     padding-top:0;
     margin-top:0;
 }
 
 
-@media only screen and (max-width: 1440px) {
+/*@media only screen and (max-width: 1440px) {*/
 
-    #landing_container{
-        width: auto;
-        margin-left:0;
-        margin-right:0;
-    }
+/*    #landing-container{*/
+/*        width: auto;*/
+/*        margin-left:0;*/
+/*        margin-right:0;*/
+/*    }*/
 
-    .hero{
-        width: 100%;
-        height: 1220px;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        background-image: url(Hero-background-1440.png);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        position: relative;
-    
-    }
-    .donation_h{
-        display: flex;
-        justify-content: center;
-        text-align: left;
-        font-weight: bold;
-        font-family: 'Montserrat', sans-serif;
-        font-size: 40px;
-        letter-spacing: 5.8px;
-        color:#A32B4B;
-    
-    }
+/*    .hero{*/
+/*        width: 100%;*/
+/*        height: 1220px;*/
+/*        display: block;*/
+/*        margin-left: auto;*/
+/*        margin-right: auto;*/
+/*        background-image: url(Hero-background-1440.png);*/
+/*        background-repeat: no-repeat;*/
+/*        background-position: center;*/
+/*        background-size: cover;*/
+/*        position: relative;*/
+/*    */
+/*    }*/
+/*    .donation-h{*/
+/*        display: flex;*/
+/*        justify-content: center;*/
+/*        text-align: left;*/
+/*        font-weight: bold;*/
+/*        font-family: 'Montserrat', sans-serif;*/
+/*        font-size: 40px;*/
+/*        letter-spacing: 5.8px;*/
+/*        color:#A32B4B;*/
+/*    */
+/*    }*/
 
-    .donation_text_box{
-        display: flex;
-        flex-direction: row;
-        height: 300px;
-        margin-right: 25px;
-    }
+/*    .donation-text-box{*/
+/*        display: flex;*/
+/*        flex-direction: row;*/
+/*        height: 300px;*/
+/*        margin-right: 25px;*/
+/*    }*/
 
-    .fh_container{
-        width: 1420px;
-        height: 720px;
-        background-color: #ECECEC;
-        margin-right: 10px;
-    }
+/*    .fh-container{*/
+/*        width: 1420px;*/
+/*        height: 720px;*/
+/*        background-color: #ECECEC;*/
+/*        margin-right: 10px;*/
+/*    }*/
 
-    
-    .fh_container{
-        margin-bottom: 0;
-        width: 1440px;
-        height: 1275px;
-        background-color: #ECECEC;
-        padding-top: 55px;
-        
-    }
-    .dealer_car_img{
-        padding-top: 0;
-        margin-top: 0;
-        margin-left: 0;
-        margin-right: 0;
-        width: 1440px;
-        height: 600px;
-       
-    }
-    
-    .inventory_button_box{
-        padding-top: 0;
-        width: 1440px;
-        height: 389px;
-        background-color: #F27590;
-    }
-}
-@media only screen and (max-width: 500px) {
-    
-    #landing_container{
-        width: auto;
-        height:auto;
-        margin-left: 10px;
-        margin-right: 10px;
-      }
+/*    */
+/*    .fh-container{*/
+/*        margin-bottom: 0;*/
+/*        width: 1440px;*/
+/*        height: 1275px;*/
+/*        background-color: #ECECEC;*/
+/*        padding-top: 55px;*/
+/*        */
+/*    }*/
 
-      .hero_logo_m{
-        display: block;
-        padding-top: 30px;
-        margin-left: auto;
-        margin-right: auto;
+/*    .inventory-button-box{*/
+/*        padding-top: 0;*/
+/*        width: 1440px;*/
+/*        height: 389px;*/
+/*        background-color: #F27590;*/
+/*    }*/
+/*}*/
 
-    }
 
-    .hero{
-        width: 365px;
-        height: 100%;
-        display: block;
-        background-image: url('Mobile-Hero-Background.png');
-        background-color: pink;
-    }
+/*@media only screen and (max-width: 500px) {*/
+/*    */
+/*    #landing-container{*/
+/*        width: auto;*/
+/*        height:auto;*/
+/*        margin-left: 10px;*/
+/*        margin-right: 10px;*/
+/*      }*/
 
-    .hero_logo{
-        width: 330px;
-        height: 200px;
-        margin-left: auto;
-        margin-right: auto;
-        padding-left:15px;
-        margin-top: 40px;
-    
-    }
-    .hero_p{
-        width: 340px;
-        margin-top: 75px;
-        margin-left: 10px;
-        font-size: 18px;   
-    }
+/*      .hero-logo-m{*/
+/*        display: block;*/
+/*        padding-top: 30px;*/
+/*        margin-left: auto;*/
+/*        margin-right: auto;*/
 
-    .donation_h{
-        width: 350px;
-        padding-left: 10px;
-        margin-top: 50px;
-        text-align: center;
-        font-weight: bold;
-        font-size:27px;
-        letter-spacing: 3.92px;
+/*    }*/
 
-    }
-    .donate_button{
-       width: 198px;
-        height: 45px;   
-        margin-left: 20%;
-        margin-top: 25px;
-        margin-bottom: 40px;
-        font-size: 16px;
-    }
+/*    .hero{*/
+/*        width: 365px;*/
+/*        height: 100%;*/
+/*        display: block;*/
+/*        background-image: url('Mobile-Hero-Background.png');*/
+/*        background-color: pink;*/
+/*    }*/
 
-    .donation_text_box{
-        display: flex;
-        flex-direction: column;
-        height: auto;
-        margin-right: 50px;
-    
-    }
-    .donation_box{
-        flex-direction: column;
-        
-    }
+/*    .hero-logo{*/
+/*        width: 330px;*/
+/*        height: 200px;*/
+/*        margin-left: auto;*/
+/*        margin-right: auto;*/
+/*        padding-left:15px;*/
+/*        margin-top: 40px;*/
+/*    */
+/*    }*/
+/*    .hero-p{*/
+/*        width: 340px;*/
+/*        margin-top: 75px;*/
+/*        margin-left: 10px;*/
+/*        font-size: 18px;   */
+/*    }*/
 
-    .donation_text{
-        display: flex;
-        flex-direction: column;
-        margin-right: 100px;
-       
-    }
-    .donation_value{
-        margin-left: 25%;
-        margin-right: 25px;
-        margin-bottom:10px;
-        padding-top: 10px;
-        height: auto;
-        font-size: 108px;
-        margin-top:0;
-    }
+/*    .donation-h{*/
+/*        width: 350px;*/
+/*        padding-left: 10px;*/
+/*        margin-top: 50px;*/
+/*        text-align: center;*/
+/*        font-weight: bold;*/
+/*        font-size:27px;*/
+/*        letter-spacing: 3.92px;*/
 
-    .donation_value_2{
-        margin-left: 32%;
-        margin-right: 25px;
-        margin-bottom:10px;
-        padding-top: 10px;
-        height: auto;
-        font-size: 108px;
-        margin-top:0;
-    }
-    
-    .donation_p1{
-        text-align: center;
-        width: 320px;
-        margin-top: 0;
-        margin-left:19%;
-        font-size:27px;
-    }
-    
-    .donation_p2{
-        width: 350px;
-        margin-top: 5px;
-        margin-left: 10%;
-        text-align: center;
-        font-size: 16px;
-    
-    }
+/*    }*/
+/*    .donate-button{*/
+/*       width: 198px;*/
+/*        height: 45px;   */
+/*        margin-left: 20%;*/
+/*        margin-top: 25px;*/
+/*        margin-bottom: 40px;*/
+/*        font-size: 16px;*/
+/*    }*/
 
-    
-    .fh_container{
-        width: 360px;
-        height: 360px;
-        background-color: #ECECEC;
-        margin-right: auto;
-        margin-left: auto; 
-    }
-}
+/*    .donation-text-box{*/
+/*        display: flex;*/
+/*        flex-direction: column;*/
+/*        height: auto;*/
+/*        margin-right: 50px;*/
+/*    */
+/*    }*/
+/*    .donation-box{*/
+/*        flex-direction: column;*/
+/*        */
+/*    }*/
+
+/*    .donation-text{*/
+/*        display: flex;*/
+/*        flex-direction: column;*/
+/*        margin-right: 100px;*/
+/*       */
+/*    }*/
+/*    .donation-value{*/
+/*        margin-left: 25%;*/
+/*        margin-right: 25px;*/
+/*        margin-bottom:10px;*/
+/*        padding-top: 10px;*/
+/*        height: auto;*/
+/*        font-size: 108px;*/
+/*        margin-top:0;*/
+/*    }*/
+
+/*    .donation-value-2{*/
+/*        margin-left: 32%;*/
+/*        margin-right: 25px;*/
+/*        margin-bottom:10px;*/
+/*        padding-top: 10px;*/
+/*        height: auto;*/
+/*        font-size: 108px;*/
+/*        margin-top:0;*/
+/*    }*/
+/*    */
+/*    .donation-p1{*/
+/*        text-align: center;*/
+/*        width: 320px;*/
+/*        margin-top: 0;*/
+/*        margin-left:19%;*/
+/*        font-size:27px;*/
+/*    }*/
+/*    */
+/*    .donation-p2{*/
+/*        width: 350px;*/
+/*        margin-top: 5px;*/
+/*        margin-left: 10%;*/
+/*        text-align: center;*/
+/*        font-size: 16px;*/
+/*    */
+/*    }*/
+
+/*    */
+/*    .fh-container{*/
+/*        width: 360px;*/
+/*        height: 360px;*/
+/*        background-color: #ECECEC;*/
+/*        margin-right: auto;*/
+/*        margin-left: auto; */
+/*    }*/
+/*}*/
