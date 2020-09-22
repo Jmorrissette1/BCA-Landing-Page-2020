@@ -159,6 +159,7 @@ body {
     margin-bottom:0;
     letter-spacing: 7px;
     color: #9E3251;
+    font-weight:bold;
     text-transform: uppercase;
     font-family: 'Montserrat', sans-serif;
 }
@@ -374,7 +375,6 @@ body {
     }
 
     .donation-p1{
-        
         height: auto;
         text-align: center;
         letter-spacing: 5.4px;
@@ -436,11 +436,8 @@ body {
         margin-bottom: 35px;
         width: 259px;
         height: 64px;
-      
         text-align: center;
         font-size: 19px;
-    
-    
     }
 
     .inv-button2{
