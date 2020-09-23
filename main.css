@@ -25,7 +25,7 @@ body {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    background-image: url(Hero-background.png);
+    background-image: url(https://di-uploads-pod14.dealerinspire.com/westhillsautoplex/uploads/2020/09/Hero-background.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -250,6 +250,7 @@ body {
 }
 .inv-button1{
     margin-right: 25px;
+    margin-bottom: 25px;
     width: 400px;
     height: 60px;
     background: #993856 0% 0% no-repeat padding-box;
@@ -267,9 +268,11 @@ body {
 
 }
 .inv-button2{
-    margin-top: 35px;
+    margin-top: 15px;
     margin-right: 20px;
     margin-bottom: 30px;
+    padding-left: 135px;
+    padding-top: 12px;
     width: 400px;
     height: 60px;
     background: none;
@@ -284,16 +287,47 @@ body {
     letter-spacing: 0px;
     color: #FFFFFF; 
     text-decoration: none;
+    
 }
 
 .dealer-car-img-2{
     display: none;
 }
 
+.disclaim-box{
+    display: flex;
+    align-items: center;
+    
+    background-color: #F27590;
+    
+}
+
+.disclaim-p{
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+}
+
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .active, .collapsible:hover {
+    background-color: pink;
+  }
+  
+  /* Style the collapsible content. Note: hidden by default */
+  .content {
+    display: flex;
+    justify-content: center;
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #F27590;
+    color: #fff;
+  }
+
 @media only screen and (max-width: 600px){
     .hero{
         height: auto;
-        background-image: url(Mobile-Hero-Background.png);
+        background-image: url(https://di-uploads-pod14.dealerinspire.com/westhillsautoplex/uploads/2020/09/Mobile-Hero-Background.png);
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -444,6 +478,7 @@ body {
         margin-top: 15px;
         margin-left: auto;
         margin-right: auto;
+        padding-left: 75px;
         width: 259px;
         height: 64px;
         text-align: center;
