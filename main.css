@@ -25,7 +25,7 @@ body {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    background-image: url(https://di-uploads-pod14.dealerinspire.com/westhillsautoplex/uploads/2020/09/Hero-background.png);
+    background-image: url(https://di-uploads-pod14.dealerinspire.com/westhillskia/uploads/2020/09/Hero-background.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -323,6 +323,77 @@ body {
     background-color: #F27590;
     color: #fff;
   }
+@media only screen and (max-width: 1440px){
+    .hero{
+        
+          background: url(https://di-uploads-pod14.dealerinspire.com/westhillskia/uploads/2020/10/Hero-background-1440.png) no-repeat center top;
+          background-size: inherit;
+          height: 800px;
+    }
+
+    .hero-logo{
+        width: 375px;
+        height: 225px;
+        margin-top: 100px;
+        margin-left: 100px;
+    }
+    
+    .hero-p{
+        width: 630px;
+        margin-left: 100px;
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 900px){
+    .hero-logo{
+        margin-left: 75px;
+    }
+
+     
+    .hero-p{
+        width: 400px;
+        margin-left: 75px;
+        font-size: 15px;
+    }
+    
+    .donation-h{
+        font-size: 38px;   
+    }
+
+    .donation-value{
+        font-size: 125px;
+        margin-bottom: 30px;
+    }
+    .donation-value-2{
+        font-size: 125px;
+    }
+
+    .donation-p1{
+        margin-top: 30px;
+        font-size: 35px;
+    }
+
+    .donation-p2{
+        font-size: 17px;
+    }
+    .fh-p{
+        font-size: 28px;
+    }
+    
+    .fh-logo{
+        margin-bottom: 150px;
+    }
+
+    .dealer-car-img{
+        margin-top:-100px;
+    }
+
+    .inv-h1{
+        font-size: 30px;
+        text-align: center;
+    }
+}
 
 @media only screen and (max-width: 600px){
     .hero{
