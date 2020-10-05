@@ -347,13 +347,26 @@ body {
 
 @media only screen and (max-width: 900px){
     .hero-logo{
+        width: 250px;
+        height: 150px;
         margin-left: 75px;
+        margin-top: 50px;
+        margin-bottom: 0px;
     }
+
+
+    .hero{
+        
+        background: url(https://di-uploads-pod14.dealerinspire.com/westhillskia/uploads/2020/10/Hero-background-800.png) no-repeat center top;
+        background-size: inherit;
+        height: 500px;
+  }
 
      
     .hero-p{
-        width: 400px;
+        width: 380px;
         margin-left: 75px;
+        margin-top: 20px;
         font-size: 15px;
     }
     
